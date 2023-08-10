@@ -1,0 +1,19 @@
+
+.menu {
+    margin: 20px 0 20px 0;
+}
+
+.botaoNav {
+    margin: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.botaoNav:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(85, 124, 115);
+    font-size: 150%;
+    transition: 0.5s;
+}

@@ -1,0 +1,43 @@
+
+.CardsMembros {
+    border: 1px solid black;
+    background-color: #96958d;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    height: 500px;
+    box-shadow: 5px 5px 80px;
+    width: 400px;
+    margin: 80px;
+}
+
+.CardsMembros img {
+    width: 400px;
+}
+
+.CardsMembros h2 {
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+}
+
+.CardsMembros p {
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .CardsMembros {
+        width: 80vw;
+        height: 900px;
+        background-color: #768b80be;
+    }
+
+    .CardsMembros img {
+        width: 100%;
+    }
+
+    .CardsMembros h2 {
+        margin-top: 20px;
+    }
+}

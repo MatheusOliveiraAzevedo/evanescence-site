@@ -1,0 +1,35 @@
+
+.containerMidias {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.midias {
+    width: 40vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    padding: 0;
+}
+
+.midias img {
+    width: 25px;
+}
+
+.icones {
+    list-style: none;
+    width: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .midias {
+        width: 80vw;
+    }
+
+    .midias img {
+        width: 50px;
+    }
+}

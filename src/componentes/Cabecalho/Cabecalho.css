@@ -1,0 +1,31 @@
+
+.logoTopo {
+    margin: 30px 20px 20px 40px;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .logoTopo {
+
+        width: 90%;
+        /* margin: 40px 20px 20px 40px; */
+        margin: 40px 20px;
+    }
+
+    .cabecalho {
+        display: gird;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .cabecalho .linkLogo {
+        display: grid;
+        justify-items: center;
+    }
+}

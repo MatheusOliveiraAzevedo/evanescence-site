@@ -1,0 +1,277 @@
+
+.paginaCompleta {
+    display: grid;
+    justify-items: center;
+}
+
+.Sobre img {
+    width: 600px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* .Sobre img:hover {
+    transform: scale(1.6);
+} */
+
+.Sobre p {
+    width: 60vw;
+    text-align: start;
+}
+
+.Sobre h1{
+    font-size: 50px;
+}
+
+.Albuns {
+    width: 90vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.Albuns h1 {
+    grid-column: span 2;
+    margin: 40px 0 40px 0;
+    font-size: 50px;
+}
+
+.ondeEncontrar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.ondeEncontrar h1 {
+    font-size: 50px;
+    grid-column: span 2
+}
+
+.ondeEncontrar iframe {
+    margin: 40px;
+}
+
+.ondeEncontrar div {
+    grid-column: span 2;
+}
+
+.youtube {
+    grid-column: span 2;
+}
+
+.Track {
+    width: 40vw;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+.Track h1 {
+    grid-column: span 2;
+}
+
+.Track li {
+    list-style: none;
+    font-size: 20px;
+    width: 300px;
+    text-align: start;
+}
+
+.Track img {
+    width: 350px;
+}
+
+.linkVoltar {
+    grid-column: span 2;
+}
+
+.custom-btn {
+    margin-top: 30px;
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+   }
+   
+   .btn-1 {
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, #96958d 0%, #96958d 100%);
+    border: none;
+   }
+   
+   .btn-1:before {
+    height: 0%;
+    width: 2px;
+   }
+   
+   .btn-1:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                 -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+       inset -4px -4px 6px 0 rgba(255,255,255,.2),
+       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+   }
+   
+
+.Membros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Membros h1 {
+    font-size: 50px;
+    grid-column: span 2;
+}
+
+.MembroCentral {
+    grid-column: span 2;
+}
+
+.Agenda {
+    color: #726666;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    width: 100%;
+}
+
+.Agenda h1 {
+    padding-top: 30px;
+    margin-top: 5px;
+    height: 70vh;
+    width: 100%;
+    font-size: 50px;
+    background-image: url(../images/banda4.jpeg);
+    background-size: cover;
+    box-shadow: 15px 15px 70px black;
+}
+
+.Agenda ul {
+    padding: 0;
+    margin-top: 80px;
+}
+
+.Agenda li {
+    list-style: none;
+    text-align: center;
+    margin: 40px;
+
+}
+
+.Agenda img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .Agenda h1 {
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        height: 590px;
+        margin-top: 40px;
+    }
+
+    .Agenda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Agenda ul {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .Agenda li {
+        text-align: start;
+    }
+
+    .Sobre {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .Sobre img {
+        width: 80%;
+    }
+
+    .Sobre p {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .Membros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Albuns {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+
+    .Track {
+        margin: 20px 0;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .Track h1 {
+        font-size: 50px;
+    }
+
+    .Track ul {
+        margin: 60px;
+        width: 700px;
+    }
+    
+    .Track li {
+        font-size: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .Track img {
+        width: 700px;
+    }
+    
+    .linkVoltar button {
+        width: 40vw;
+        height: 5vh;
+        font-size: 30px;
+        border-radius: 20px;
+    }
+
+    .ondeEncontrar {
+        margin-bottom: 30px;
+    }
+
+    .ondeEncontrar h2 {
+        display: none;
+    } 
+
+    .ondeEncontrar iframe {
+        width: 900px;
+    }
+
+}
