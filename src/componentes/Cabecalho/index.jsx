@@ -3,7 +3,7 @@ import Navbar from "../Navbar"
 import Logo from "../../images/logonova.png"
 import './Cabecalho.css'
 import RedesSociais from "../RedesSociais"
-import iconCircle from "../../images/pngwing.com (1).png"
+import iconCircle from "../../images/pngwing.png"
 import { useState } from "react"
 import { SlMenu  } from 'react-icons/sl'
 
