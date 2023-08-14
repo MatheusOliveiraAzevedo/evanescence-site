@@ -1,17 +1,24 @@
 
 .logoTopo {
     margin: 30px 20px 20px 40px;
+    width: 90%;
 }
 
 .cabecalho {
     display: grid;
+    width: 90%;
     grid-template-columns: 1fr 2fr;
     align-items: center;
 }
 
-.cabecalho .midiasCabecalho {
+.cabecalho .cabecalhoMidia {
     display: none;
 }
+
+.cabecalho .cabecalhoMenu span {
+    display: none;
+}
+
 
 @media screen and (max-width: 1024px) {
     
@@ -61,4 +68,7 @@
         top: -50px;
     }
 
+    .cabecalho .cabecalhoMenu span {
+        display: block;
+    }
 }

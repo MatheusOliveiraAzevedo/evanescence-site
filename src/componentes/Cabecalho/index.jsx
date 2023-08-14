@@ -4,24 +4,43 @@ import Logo from "../../images/logonova.png"
 import './Cabecalho.css'
 import RedesSociais from "../RedesSociais"
 import iconCircle from "../../images/pngwing.png"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { SlMenu  } from 'react-icons/sl'
 
 
 
 function Cabecalho() {
 
+
     let [clickMidia, setClickMidia] = useState(false)
     let [clickMenu, setClickMenu] = useState(false)
 
+
+    useEffect(() => {
+
+        let larguraTela = window.innerHeight;
+
+        if (larguraTela <= 1024) {
+            setClickMenu(true)
+        } else {
+            // setClickMenu(false)
+        }
+
+    },[])
+
+
     function menuMidia(evento) {
         setClickMidia(!clickMidia)
-        // console.log(clickMidia)
+        if (clickMidia === false) {
+            setClickMenu(false)
+        }
     }
 
     function menu(evento) {
         setClickMenu(!clickMenu)
-        console.log(clickMenu)
+        if (clickMenu === false) {
+            setClickMidia(false)
+        }
 
     }
 
@@ -47,9 +66,7 @@ function Cabecalho() {
                     <SlMenu size={40}/>
                 </span>
                 {clickMenu 
-                && <div className="menuDesfoque" >
-                    <Navbar closeMenu={fechar => fecharMenu(fechar)} classe="menu menuFlutuante"></Navbar>
-                </div> 
+                && <div className="menuDesfoque" ><Navbar closeMenu={fechar => fecharMenu(fechar)} closeMenuShow={clickMenu} classe="menu menuFlutuante"></Navbar></div> 
                 }
             </div>
         </header>

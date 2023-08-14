@@ -18,9 +18,18 @@
     transition: 0.5s;
 }
 
+.menuFlutuante .divBotaoFechar {
+    display: none;
+}
+
+.menuFlutuante .logoMenu {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     
     .menu {
+        
     }
 
     .menuFlutuante {
@@ -47,6 +56,7 @@
 
     .menuFlutuante .logoMenu {
         width: 50%;
+        display: block;
     }
 
     .menuFlutuante div {
@@ -55,10 +65,14 @@
         margin-top: 30px;
     }
 
-    .iconeFechar {
+
+    .menuFlutuante .divBotaoFechar{
+        display: block;
         position: absolute;
         right: 20px;
-        top: 20px;
-
+        top: -10px;
+    }
+    
+    .iconeFechar {
     }
 }
