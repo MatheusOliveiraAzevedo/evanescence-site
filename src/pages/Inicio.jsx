@@ -12,7 +12,7 @@ function Inicio () {
         <div className="paginaCompleta">
             <Cabecalho></Cabecalho>
             <Outlet></Outlet>
-            <RedesSociais></RedesSociais>
+            <RedesSociais classe="containerMidias" classe2="midias" classe3="icones"></RedesSociais>
             <Rodape></Rodape>
         </div>
     )

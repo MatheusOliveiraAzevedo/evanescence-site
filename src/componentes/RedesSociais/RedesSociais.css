@@ -23,8 +23,24 @@
     width: 60px;
 }
 
+.containerMidiasFlut {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     
+    .containerMidiasFlut{
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: -10px;
+        background-color: #85826b;
+        width: 80px;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px;
+    }
+
     .midias {
         width: 80vw;
     }
@@ -32,4 +48,18 @@
     .midias img {
         width: 50px;
     }
+
+    .midiaFlutuante {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .midiaFlutuante .iconesFlutuante {
+        width: 10%;
+    }
+    
+    .iconesFlutuante {
+        margin: 20px 0;
+    }
+
 }

@@ -154,7 +154,7 @@ const Tracks = (props) => {
             
         React.useEffect(() => {
                 letras();
-        },[]);
+        },);
 
         return (
         <div className='Track'>

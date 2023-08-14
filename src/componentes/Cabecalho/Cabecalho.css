@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+.cabecalho .midiasCabecalho {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     
     .logoTopo {
@@ -19,13 +23,42 @@
     }
 
     .cabecalho {
-        display: gird;
-        grid-template-columns: 1fr;
-        justify-items: center;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
     }
 
     .cabecalho .linkLogo {
         display: grid;
         justify-items: center;
     }
+
+    .cabecalho .midiasCabecalho {
+        display: grid;
+    }
+
+    .cabecalho .cabecalhoMidia {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .cabecalho .cabecalhoMidia .logoCircle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cabecalho .cabecalhoMenu {
+        position: relative;
+    }
+    
+    .menuDesfoque {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.436);
+        width: 110vw;
+        height: 150vh;
+        right: -40px;
+        top: -50px;
+    }
+
 }

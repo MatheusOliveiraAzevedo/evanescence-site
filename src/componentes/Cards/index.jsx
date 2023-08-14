@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Cards = (props) => {
     const album = props.tituloAlbum;
-    const img = props.Local
 
     function infoTrack () {
         props.alterar2(album)

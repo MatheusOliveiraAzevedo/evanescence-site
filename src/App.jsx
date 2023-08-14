@@ -14,7 +14,7 @@ import Agenda from './pages/Agenda';
 function App() {
 
   const [albumSelecionado, setAlbumSelecionado] = useState("");
-  const [imagemAlbum, setImagemAlbum] = useState("")
+
 
   function tracks(valor) {
     setAlbumSelecionado(valor)
